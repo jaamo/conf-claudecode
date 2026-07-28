@@ -1,0 +1,11 @@
+# Ignore every top-level entry...
+/*
+
+# ...then allow back only what's config.
+!/.gitignore
+!/skills/
+!/agents/
+!/commands/
+!/CLAUDE.md
+!/settings.json
+!/keybindings.json
