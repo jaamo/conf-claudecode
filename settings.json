@@ -2,4 +2,28 @@
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark"
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "notify-send 'Claude Code' 'Task completed!'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "notify-send 'Claude Code' 'Claude is waiting for your input or approval'"
+          }
+        ]
+      }
+    ]
+  }  
 }
