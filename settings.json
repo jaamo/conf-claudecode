@@ -1,29 +1,28 @@
 {
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "fable",
+  "enabledPlugins": {
+    "chrome-devtools-mcp@chrome-devtools-plugins": true,
+    "gitkraken-hooks@gitkraken": false
+  },
+  "extraKnownMarketplaces": {
+    "chrome-devtools-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ChromeDevTools/chrome-devtools-mcp"
+      }
+    },
+    "gitkraken": {
+      "source": {
+        "source": "directory",
+        "path": "/home/jaamo/.claude/plugins/marketplaces/gitkraken"
+      }
+    }
+  },
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
-  "hooks": {
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "notify-send 'Claude Code' 'Task completed!'"
-          }
-        ]
-      }
-    ],
-    "Notification": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "notify-send 'Claude Code' 'Claude is waiting for your input or approval'"
-          }
-        ]
-      }
-    ]
-  }  
+  "agentPushNotifEnabled": true
 }
